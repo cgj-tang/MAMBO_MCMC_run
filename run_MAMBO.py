@@ -16,7 +16,7 @@ if len(sys.argv) != 5:
     sys.exit("Stopping - expected five positional arguments:"
             "(1) input abundance table, (2) table of sorted models delimited by new-line breaks, "
             "(3) path to folder containing models, (4) the output file,"
-			"and (4) the number of desired MCMC runs.")
+            "and (4) the number of desired MCMC runs.")
 else:
     abundance_file = sys.argv[1]
     model_list = sys.argv[2]
@@ -24,13 +24,6 @@ else:
     output_file = sys.argv[4]
     runs = sys.argv[5]
 
-
-#temp
-abundance_file = "/home/chris/Kang/mambo_in/12b.txt"
-model_list = "/home/chris/Kang/model_list_mambo.txt"
-model_directory = "/home/chris/mambo/models/Kang"
-output_file = "/home/chris/delete.csv"
-runs = 100
 
 # Load abundance file
 abundance = numpy.genfromtxt(abundance_file)
