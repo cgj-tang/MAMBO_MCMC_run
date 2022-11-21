@@ -16,7 +16,7 @@ if len(sys.argv) != 5:
     sys.exit("Stopping - expected five positional arguments:"
             "(1) input abundance table, (2) table of sorted models delimited by new-line breaks, "
             "(3) path to folder containing models, (4) the output file,"
-            "and (4) the number of desired MCMC runs.")
+            "and (5) the number of desired MCMC runs.")
 else:
     abundance_file = sys.argv[1]
     model_list = sys.argv[2]
